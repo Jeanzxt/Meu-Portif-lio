@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sobre mim | Jean Torres</title>
+  <style>
+    body {
+      margin: 0;
+      background-color: #f2f5fa;
+      color: #252b36;
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+    }
+
+    header, main, footer {
+      width: 90%;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    header {
+      padding: 24px 0;
+      border-bottom: 2px solid #dce3ee;
+    }
+
+    h1, h2 {
+      color: #315a8a;
+    }
+
+    nav a, footer a {
+      margin-right: 16px;
+      color: #315a8a;
+    }
+
+    a {
+      transition: color 0.3s;
+    }
+
+    a:hover {
+      color: #a34a55;
+    }
+
+    main {
+      padding: 30px 0;
+    }
+
+    section {
+      margin-bottom: 24px;
+      padding: 20px;
+      border-radius: 8px;
+      background-color: white;
+    }
+
+    button {
+      padding: 10px 16px;
+      border: 0;
+      border-radius: 5px;
+      background-color: #315a8a;
+      color: white;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    button:hover {
+      background-color: #24466f;
+    }
+
+    footer {
+      padding: 20px 0;
+      border-top: 2px solid #dce3ee;
+    }
+
+    @media (max-width: 600px) {
+      nav a {
+        display: inline-block;
+        margin: 4px 12px 4px 0;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Sobre mim</h1>
+    <nav aria-label="Navegação principal">
+      <a href="index.html">Início</a>
+      <a href="sobre.html">Sobre mim</a>
+      <a href="projetos.html">Projetos</a>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <h2>Quem sou eu?</h2>
+      <p>Sou Jean Torres, aluno do primeiro ano de Engenharia de Software.</p>
+      <p>Estou no começo do curso e aprendendo os primeiros passos da criação de páginas para a internet.</p>
+    </section>
+
+    <section>
+      <h2>O que estou aprendendo</h2>
+      <ul>
+        <li>HTML para organizar o conteúdo de uma página.</li>
+        <li>CSS para escolher cores, fontes e posicionar os elementos.</li>
+        <li>Um pouco de JavaScript para fazer a página responder a um clique.</li>
+      </ul>
+      <button type="button" onclick="mostrarMensagem()">Clique aqui</button>
+      <p id="mensagem">Ainda tenho muito para aprender!</p>
+    </section>
+
+    <section>
+      <h2>Meus links</h2>
+      <p>
+        <a href="https://github.com/Jeanzxt" target="_blank" rel="noopener noreferrer">GitHub</a> |
+        <a href="https://www.linkedin.com/in/jean-torres-28b33b352/" target="_blank" rel="noopener noreferrer">LinkedIn</a> |
+        <a href="mailto:jean.zxt08@gmail.com">E-mail</a>
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    <p>Portfólio de Jean Torres — 2026</p>
+  </footer>
+
+  <script>
+    function mostrarMensagem() {
+      document.getElementById("mensagem").textContent =
+        "Estou aprendendo um passo de cada vez.";
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projetos | Jean Torres</title>
+  <style>
+    body {
+      margin: 0;
+      background-color: #f2f5fa;
+      color: #252b36;
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+    }
+
+    header, main, footer {
+      width: 90%;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    header {
+      padding: 24px 0;
+      border-bottom: 2px solid #dce3ee;
+    }
+
+    h1, h2 {
+      color: #315a8a;
+    }
+
+    nav a, footer a {
+      margin-right: 16px;
+      color: #315a8a;
+    }
+
+    a {
+      transition: color 0.3s;
+    }
+
+    a:hover {
+      color: #a34a55;
+    }
+
+    main {
+      padding: 30px 0;
+    }
+
+    section {
+      margin-bottom: 24px;
+      padding: 20px;
+      border-radius: 8px;
+      background-color: white;
+    }
+
+    button {
+      padding: 10px 16px;
+      border: 0;
+      border-radius: 5px;
+      background-color: #315a8a;
+      color: white;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    button:hover {
+      background-color: #24466f;
+    }
+
+    footer {
+      padding: 20px 0;
+      border-top: 2px solid #dce3ee;
+    }
+
+    @media (max-width: 600px) {
+      nav a {
+        display: inline-block;
+        margin: 4px 12px 4px 0;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Meus projetos</h1>
+    <nav aria-label="Navegação principal">
+      <a href="index.html">Início</a>
+      <a href="sobre.html">Sobre mim</a>
+      <a href="projetos.html">Projetos</a>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <h2>Meu primeiro portfólio</h2>
+      <p>Este site é um exercício do meu primeiro bimestre aprendendo HTML e CSS.</p>
+      <p>Usei títulos, parágrafos, links, listas, cores e uma imagem. Também coloquei uma pequena função em JavaScript.</p>
+      <p><strong>O que usei:</strong> HTML, CSS e JavaScript básico.</p>
+    </section>
+
+    <section>
+      <h2>O que quero aprender depois</h2>
+      <ul>
+        <li>Deixar as páginas mais bonitas usando CSS.</li>
+        <li>Aprender mais sobre JavaScript.</li>
+        <li>Fazer novos projetos durante o curso.</li>
+      </ul>
+      <button type="button" onclick="mostrarMensagem()">Clique aqui</button>
+      <p id="mensagem">Este é só o começo!</p>
+    </section>
+
+    <section>
+      <h2>Veja meus códigos</h2>
+      <p><a href="https://github.com/Jeanzxt" target="_blank" rel="noopener noreferrer">Acesse meu GitHub</a></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>Portfólio de Jean Torres — 2026</p>
+  </footer>
+
+  <script>
+    function mostrarMensagem() {
+      document.getElementById("mensagem").textContent =
+        "Novos projetos virão conforme eu for aprendendo!";
+    }
+  </script>
+</body>
+</html>
